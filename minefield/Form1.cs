@@ -16,5 +16,11 @@ namespace minefield
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form easyForm = new Form();
+            easyForm.Show();
+        }
     }
 }
