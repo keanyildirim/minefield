@@ -31,6 +31,7 @@ namespace minefield
                     uknBtn.Location = new Point(10+i*wBtn,10+x*wBtn);
                     uknBtn.Width = wBtn;
                     uknBtn.Height = wBtn;
+                    uknBtn.Text = "*";
                     easyForm.Controls.Add(uknBtn);
 
                 }
