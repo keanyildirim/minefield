@@ -17,9 +17,24 @@ namespace minefield
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void diffLvl (object sender, EventArgs e)
         {
+            int wBtn = 25;
             Form easyForm = new Form();
+            easyForm.Width = 363;
+            easyForm.Height = 383;
+            for (int i = 0; i < 13; i++)
+            {
+                for (int x = 0; x < 13; x++)
+                {
+                    Button uknBtn = new Button();
+                    uknBtn.Location = new Point(10+i*wBtn,10+x*wBtn);
+                    uknBtn.Width = wBtn;
+                    uknBtn.Height = wBtn;
+                    easyForm.Controls.Add(uknBtn);
+
+                }
+            }
             easyForm.Show();
         }
     }
